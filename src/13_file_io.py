@@ -7,7 +7,6 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Open up the "foo.txt" file (which already exists) for reading
 # Print all the contents of the file, then close the file
 # Note: pay close attention to your current directory when trying to open "foo.txt"
-os.listdir()
 with open('foo.txt') as f:
     read_data = f.read()
 print(read_data)
@@ -20,5 +19,5 @@ print(read_data)
 b = open("bar.txt", "w+")
 b.write('Hello \nworld \n!')
 with open('bar.txt') as b:
-    rd = f.read()
+    rd = b.read()
 print(rd)
